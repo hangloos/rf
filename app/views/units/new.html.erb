@@ -1,0 +1,10 @@
+<%= form_for @unit do |f| %>
+ Name: <%= f.text_field :name %><br />
+  Cleaning Time: <%= f.number_field :cleaning_time %><br />
+  <%= f.submit %>
+<% end %>
+
+  <h1>Units</h1>
+  <% @units.each do |unit| %>
+  <%= unit.name %><br />
+  <% end %>
